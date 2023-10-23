@@ -24,7 +24,7 @@ public class CurrencyController
 	CurrencyService currencyService;
 	
 	//creating a get mapping that retrieves all the currencies details from the database 
-	@GetMapping("/currencies")
+	@GetMapping("api/currencies")
 	private List<Currency> getAllCurrencies() {
 		return currencyService.getAllCurrencies();
 	}
